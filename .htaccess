@@ -1,0 +1,90 @@
+# Sistema Inteligente de Sugestão, Gestão e Geração de Temas e Trabalhos Académicos
+# Configuração Apache para reescrita de URLs
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /HildoDomingos/
+    
+    # Remover index.php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php?/$1 [L]
+    
+    # Redirecionar www para não-www (opcional)
+    # RewriteCond %{HTTP_HOST} ^www\. [NC]
+    # RewriteRule ^(.*)$ http://%{HTTP_HOST:www.}/$1 [R=301,L]
+q
+    # HTTPS (opcional)
+    # RewriteCond %{HTTPS} off
+    # RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+q
+q
+</IfModule>
+
+# Headers de Segurança
+<IfModule mod_headers.c>
+    # Prevenir clickjacking
+    Header set X-Frame-Options "SAMEORIGIN"
+    
+    # Prevenir MIME type sniffing
+    Header set X-Content-Type-Options "nosniff"
+    
+    # Proteção XSS (navegadores antigos)
+    Header set X-XSS-Protection "1; mode=block"
+    
+    # Controlar referrer
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+    
+    # Content Security Policy (básico)
+    # Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' cdnjs.cloudflare.com"
+q
+q
+</IfModule>
+
+# Desabilitar listagem de diretórios
+Options -Indexes
+
+# Proteção contra acesso a arquivos sensíveis
+<FilesMatch "\.\.(env|sql|json|php)$|^\.">
+    Deny from all
+</FilesMatch>
+
+# Comprimir respostas
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE text/javascript
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/json
+</IfModule>
+
+# Cache
+<IfModule mod_expires.c>
+    ExpiresActive On
+    
+    # Imagens
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/gif "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/webp "access plus 1 month"
+    ExpiresByType image/svg+xml "access plus 1 month"
+    ExpiresByType image/x-icon "access plus 1 year"
+    
+    # CSS e JavaScript
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType text/javascript "access plus 1 year"
+    
+    # Fontes
+    ExpiresByType font/ttf "access plus 1 year"
+    ExpiresByType font/otf "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+    
+    # HTML e outros
+    ExpiresByType text/html "access plus 12 hours"
+    ExpiresByType application/json "access plus 12 hours"
+q
+</IfModule>
