@@ -1,191 +1,157 @@
-<!-- Banner -->
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,100:1e293b&height=220&section=header&text=Hildo%20Domingos&fontSize=42&fontAlignY=35&desc=Portfólio%20Técnico%20|%20Projectos%20Web%20|%20Soluções%20Digitais&descAlignY=55&descAlign=50&fontColor=ffffff" />
-</p>
+## 📚 Sistema Inteligente de Sugestão, Gestão e Geração de Temas e Trabalhos Académicos
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Perfil-Portfólio%20Premium-7c3aed?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Projectos-Organizados%20por%20Estado-2563eb?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Stack-PHP%20%7C%20MySQL%20%7C%20Bootstrap-16a34a?style=for-the-badge" />
-</p>
+### 🚀 Visão Geral
+
+Sistema web profissional, robusto e escalável para **gerenciamento inteligente de temas académicos, trabalhos escolares, tutoria e pagamentos** em instituições de ensino angolanas.
 
 ---
 
-## 👨🏽‍💻 Sobre mim
+## 📋 Índice
 
-Sou **Hildo Domingos**, desenvolvedor web focado na criação de sistemas modernos, funcionais e visualmente bem estruturados.  
-Este repositório reúne os meus projectos, experiências e soluções digitais, organizados como um portfólio técnico em evolução contínua.
-
----
-
-## 🚀 Projectos em produção
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>🚌 SCAV — Sistema de Controlo e Agendamento de Viagens</h3>
-      <p>
-        Plataforma web para gestão de viagens, reservas, bilhetes e controlo de assentos.
-      </p>
-      <p>
-        <img src="https://img.shields.io/badge/Estado-Activo-22c55e?style=flat-square" />
-        <img src="https://img.shields.io/badge/Tecnologia-PHP%20%7C%20MySQL%20%7C%20Bootstrap-0ea5e9?style=flat-square" />
-      </p>
-      <p>
-        <a href="https://scav.wuaze.com/scav/" target="_blank">
-          <img src="https://img.shields.io/badge/🌐%20Abrir%20Demo-1d4ed8?style=for-the-badge" />
-        </a>
-      </p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>📘 Sistema de Planos de Aula</h3>
-      <p>
-        Sistema para criação, organização e exportação de planos de aula de forma prática e profissional.
-      </p>
-      <p>
-        <img src="https://img.shields.io/badge/Estado-Em%20Produção-f59e0b?style=flat-square" />
-        <img src="https://img.shields.io/badge/Tecnologia-PHP%20%7C%20Bootstrap%20%7C%20MySQL-0ea5e9?style=flat-square" />
-      </p>
-      <p>
-        <a href="#" target="_blank">
-          <img src="https://img.shields.io/badge/🔎%20Ver%20Detalhes-334155?style=for-the-badge" />
-        </a>
-      </p>
-    </td>
-  </tr>
-</table>
+- [Características Principais](#características-principais)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Instalação](#instalação)
+- [Configuração](#configuração)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Utilização](#utilização)
+- [Segurança](#segurança)
+- [API](#api)
+- [Contribuição](#contribuição)
 
 ---
 
-## ⚙️ Projectos activos
+## ✨ Características Principais
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>📢 Sistema de Gestão de Publicidades</h3>
-      <p>
-        Plataforma para gerir cards de publicidade por agência, com upload, listagem e remoção.
-      </p>
-      <p>
-        <img src="https://img.shields.io/badge/Estado-Activo-22c55e?style=flat-square" />
-        <img src="https://img.shields.io/badge/Foco-Administração%20de%20Conteúdo-f97316?style=flat-square" />
-      </p>
-      <p>
-        <a href="#" target="_blank">
-          <img src="https://img.shields.io/badge/🔎%20Abrir%20Projecto-0f766e?style=for-the-badge" />
-        </a>
-      </p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>🎓 Plataforma de Conteúdos Educacionais</h3>
-      <p>
-        Espaço para partilha de conteúdos, materiais e recursos de apoio ao estudo.
-      </p>
-      <p>
-        <img src="https://img.shields.io/badge/Estado-Activo-22c55e?style=flat-square" />
-        <img src="https://img.shields.io/badge/Foco-Educação%20e%20Conteúdo-8b5cf6?style=flat-square" />
-      </p>
-      <p>
-        <a href="#" target="_blank">
-          <img src="https://img.shields.io/badge/🔎%20Abrir%20Projecto-0f766e?style=for-the-badge" />
-        </a>
-      </p>
-    </td>
-  </tr>
-</table>
+### Para Estudantes
+- ✅ Registro e autenticação por instituição
+- ✅ Sugestão inteligente de temas académicos
+- ✅ Geração gratuita de 2 temas, pagamento para adicionais
+- ✅ Solicitação e gerenciamento de tutoria
+- ✅ Geração de trabalhos académicos estruturados
+- ✅ Sistema de favoritos
+- ✅ Histórico completo
+- ✅ Exportação em PDF
+
+### Para Tutores
+- ✅ Visualização de estudantes da sua instituição
+- ✅ Aprovação/Rejeição de pedidos de orientação
+- ✅ Acompanhamento de estudantes
+- ✅ Visualização de temas e trabalhos
+- ✅ Relatórios de orientação
+
+### Para Administradores
+- ✅ Gerenciamento completo de usuários
+- ✅ Gestão de instituições
+- ✅ Controle de cursos e níveis
+- ✅ Aprovação de instituições
+- ✅ Gerenciamento de pagamentos
+- ✅ Relatórios e estatísticas
+
+### Para Super Administrador
+- ✅ Acesso total ao sistema
+- ✅ Gestão de todos os módulos
+- ✅ Configuração de taxas e preços
+- ✅ Logs e auditoria
+- ✅ Backups e recuperação
 
 ---
 
-## 🧪 Projectos planeados
+## 🛠️ Tecnologias Utilizadas
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>🌐 Portfólio Pessoal</h3>
-      <p>
-        Website profissional para apresentação dos meus projectos, serviços e contacto.
-      </p>
-      <p>
-        <img src="https://img.shields.io/badge/Estado-Planeado-64748b?style=flat-square" />
-        <img src="https://img.shields.io/badge/Foco-Imagem%20Profissional-14b8a6?style=flat-square" />
-      </p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>🗂️ Sistema de Gestão Académica</h3>
-      <p>
-        Sistema para apoio à gestão de turmas, materiais, avaliações e documentos.
-      </p>
-      <p>
-        <img src="https://img.shields.io/badge/Estado-Planeado-64748b?style=flat-square" />
-        <img src="https://img.shields.io/badge/Foco-Educação%20e%20Administração-f43f5e?style=flat-square" />
-      </p>
-    </td>
-  </tr>
-</table>
+### Backend
+- **PHP 8+** - Linguagem de programação
+- **MySQL** - Banco de dados relacional
+- **PDO** - Acesso seguro ao banco de dados
+- **Arquitetura MVC** - Padrão de design
+
+### Frontend
+- **HTML5** - Markup
+- **CSS3** - Estilos
+- **Bootstrap 5** - Framework CSS responsivo
+- **JavaScript ES6+** - Lógica frontend
+- **jQuery** - Manipulação DOM
+- **AJAX** - Requisições assíncronas
+- **SweetAlert2** - Alertas e confirmações
+- **Font Awesome** - Ícones
 
 ---
 
-## 🖼️ Screenshots do SCAV
+## 📦 Instalação
 
-<table>
-  <tr>
-    <td align="center">
-      <img src="assets/screenshots/scav-home.png" alt="SCAV Home" width="100%">
-      <br><strong>Página inicial</strong>
-    </td>
-    <td align="center">
-      <img src="assets/screenshots/scav-reservas.png" alt="SCAV Reservas" width="100%">
-      <br><strong>Reservas</strong>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="assets/screenshots/scav-poltronas.png" alt="SCAV Poltronas" width="100%">
-      <br><strong>Mapa de poltronas</strong>
-    </td>
-    <td align="center">
-      <img src="assets/screenshots/scav-admin.png" alt="SCAV Admin" width="100%">
-      <br><strong>Painel administrativo</strong>
-    </td>
-  </tr>
-</table>
+### Requisitos
+- PHP 8.0 ou superior
+- MySQL 5.7 ou superior
+- Apache com mod_rewrite habilitado
 
----
+### Passos
 
-## 🧰 Tecnologias e ferramentas
-
-<p align="center">
-  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" />
-  <img src="https://img.shields.io/badge/MySQL-00758F?style=for-the-badge&logo=mysql&logoColor=white" />
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-  <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" />
-  <img src="https://img.shields.io/badge/AJAX-005571?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/SweetAlert-ff6b6b?style=for-the-badge" />
-</p>
-
----
-
-## 🎯 Objectivo deste repositório
-
-O objectivo deste repositório é centralizar os meus projectos e mostrar a minha evolução como desenvolvedor, reunindo num só lugar soluções digitais organizadas, funcionais e bem apresentadas.
-
----
-
-## 📂 Estrutura do repositório
-
+1. **Clone o repositório**
 ```bash
-/
-├── scav/
-│   ├── index.php
-│   ├── admin/
-│   ├── cliente/
-│   ├── assets/
-│   │   └── screenshots/
-│   ├── includes/
-│   └── config/
-├── planos-de-aula/
-├── publicidades/
-├── conteudos-educacionais/
-└── README.md
+git clone https://github.com/Ildimauro/HildoDomingos.git
+cd HildoDomingos
+git checkout sistema-academico-v1
+```
+
+2. **Configure o banco de dados**
+```bash
+mysql -u root -p < database/schema.sql
+mysql -u root -p < database/seeds.sql
+```
+
+3. **Configure as credenciais em config/config.php**
+
+4. **Configure as permissões**
+```bash
+chmod -R 755 public/uploads
+chmod -R 755 storage/logs
+```
+
+5. **Acesse http://localhost/HildoDomingos**
+
+---
+
+## 📁 Estrutura do Projeto
+
+```
+app/
+├── BaseController.php
+├── BaseModel.php
+├── controllers/
+├── models/
+└── views/
+config/
+├── config.php
+└── database.php
+public/
+├── assets/
+│   ├── css/
+│   ├── js/
+│   └── uploads/
+helpers/
+├── functions.php
+├── auth.php
+└── validation.php
+index.php
+.htaccess
+```
+
+---
+
+## 🔐 Segurança
+
+✅ Proteção contra SQL Injection
+✅ Proteção contra XSS
+✅ Proteção contra CSRF
+✅ Hash de senhas (bcrypt)
+✅ Headers de segurança
+✅ Sessões seguras
+✅ Logs de atividade
+
+---
+
+## 🎯 Status do Projeto
+
+![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)
+![Versão](https://img.shields.io/badge/Versão-1.0.0-blue)
+
+**Desenvolvido com ❤️ por Ildimauro**
